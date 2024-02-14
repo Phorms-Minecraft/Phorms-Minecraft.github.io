@@ -21,12 +21,22 @@
       margin-top: 0;
     }
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .card {
+      width: 300px;
       background-color: #fff;
       padding: 20px;
+      margin: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      margin-top: 0;
     }
     p {
       margin-bottom: 10px;
@@ -49,17 +59,46 @@
     <h1>Welcome to Our Server!</h1>
   </header>
   <div class="container">
-    <h2>Server Start Information</h2>
-    <p>Welcome to our Minecraft server! We're excited to have you join us.</p>
-    <p>To get started, please make sure you have the following:</p>
-    <ul>
-      <li>Minecraft Java Edition or Bedrock Edition installed on your device.</li>
-      <li>Our server IP address: [Your server's IP address]</li>
-      <li>A positive attitude and a willingness to explore and have fun!</li>
-    </ul>
-    <p>Click the button below to connect to our server and start your adventure!</p>
-    <a href="[Your server's IP address]" class="button">Connect to Server</a>
+    <div class="card">
+      <h2>How to Connect</h2>
+      <p>Learn how to connect to our server and start your adventure.</p>
+      <a href="#connect" class="button">Learn More</a>
+    </div>
+    <div class="card">
+      <h2>Server Rules</h2>
+      <p>Find out about our server rules to ensure a positive gaming experience.</p>
+      <a href="#rules" class="button">Learn More</a>
+    </div>
+    <div class="card">
+      <h2>Getting Started</h2>
+      <p>Get tips and advice on getting started in our server.</p>
+      <a href="#getting-started" class="button">Learn More</a>
+    </div>
+  </div>
+
+  <!-- Section for detailed information -->
+  <div id="detailed-info">
+    <div id="connect">
+      <h2>How to Connect</h2>
+      <p>To connect to our server, open Minecraft and select "Multiplayer" from the main menu.</p>
+      <p>Click "Add Server" and enter the server IP address: [Your server's IP address]</p>
+      <p>Then click "Done" and select the server from the list to join!</p>
+      <a href="#top" class="button">Back to Top</a>
+    </div>
+    <div id="rules">
+      <h2>Server Rules</h2>
+      <p>1. Be respectful to other players.</p>
+      <p>2. No griefing or stealing from other players.</p>
+      <p>3. No cheating or hacking.</p>
+      <a href="#top" class="button">Back to Top</a>
+    </div>
+    <div id="getting-started">
+      <h2>Getting Started</h2>
+      <p>1. Explore the world and gather resources.</p>
+      <p>2. Build your base and make it your home.</p>
+      <p>3. Interact with other players and join community events!</p>
+      <a href="#top" class="button">Back to Top</a>
+    </div>
   </div>
 </body>
 </html>
-
