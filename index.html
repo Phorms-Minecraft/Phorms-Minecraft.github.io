@@ -16,6 +16,7 @@
       color: #fff;
       text-align: center;
       padding: 20px 0;
+      position: relative; /* Add this line */
     }
     header h1 {
       margin: 0;
@@ -27,6 +28,9 @@
     }
     .help-buttons {
       margin-top: 20px;
+      position: absolute; /* Add this line */
+      top: 20px; /* Add this line */
+      right: 20px; /* Add this line */
     }
     .help-button {
       display: inline-block;
@@ -41,31 +45,23 @@
     .help-button:hover {
       background-color: #45a049;
     }
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* New styles for signup and sign in buttons */
+    .auth-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
-    section h2 {
-      margin-top: 0;
+    .auth-buttons button {
+      margin-left: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    li a {
-      text-decoration: none;
-      color: #4CAF50;
-      transition: color 0.3s;
-    }
-    li a:hover {
-      color: #45a049;
+    .auth-buttons button:hover {
+      background-color: #555;
     }
   </style>
 </head>
@@ -75,6 +71,10 @@
     <p>IP Address: 0.0.0.0</p>
     <div class="help-buttons">
       <a href="/Join" class="help-button">Join Now!</a>
+    </div>
+    <div class="auth-buttons"> <!-- New div for authentication buttons -->
+      <button onclick="window.location.href='/signup'">Sign Up</button>
+      <button onclick="window.location.href='/signin'">Sign In</button>
     </div>
   </header>
   <section>
